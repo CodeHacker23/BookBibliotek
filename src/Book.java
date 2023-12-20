@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
 public class Book {
+    public static   class  library{
 
 
+    }
 
-    public  class  library{
-        private String name;
 
-     }
 }

@@ -17,8 +17,9 @@ public class Main { //07.12.23
 
      */
 
-    public static void main(String[] args) {
-        Beginning.beginning1();
+    public static void main(String[] args) throws NegativeException {
+        Beginning beginning = new Beginning();
+        beginning.beginning1();
 
     }
 
