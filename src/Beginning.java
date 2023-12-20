@@ -1,9 +1,14 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Timer;
 
 public class Beginning {
-    static void beginning1() {
 
+
+
+
+
+    public static void beginning1() throws   NegativeException { {
 
         System.out.println("Добро пожаловать в библиотеку!");
         System.out.println();
@@ -14,7 +19,6 @@ public class Beginning {
         Scanner csr = new Scanner(System.in);
         int namber = csr.nextInt();
         csr.nextLine();
-
 
         switch (namber) {
             case 1 -> {
@@ -27,16 +31,20 @@ public class Beginning {
                 System.out.println("Ведите ваш номер телефона ");
                 String namberTel = csr.nextLine();
 
+
                 do {
                     if (namberTel.length() == 11) {
-                        System.out.println("На ваш номер поступит смс с кодом ");
+                        System.out.println(" В течении 15 секунд. На ваш номер поступит смс с кодом ");
                         Random random = new Random();
 
                         int randomKod = random.nextInt(1000);
                         long namberSotov = Long.parseLong(namberTel);
+                        GlobalPeremennai.peremennai1.balance = randomKod;
 
                         if ((randomKod > 100)) {
-                            System.out.println("код для входа: " + randomKod);
+                            Taimer.Taiming();
+                             // System.out.println("код для входа: " + randomKod);
+
                             break;
                         } else {
                             random.nextInt(1000);
@@ -48,11 +56,20 @@ public class Beginning {
 
 
                     }
+
                 } while (true);
 
             }
+        }
 
 
         }
     }
+
+
 }
+
+
+
+
+
