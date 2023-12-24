@@ -29,7 +29,7 @@ public class Beginning {
 
                     System.out.println("Ведите ваш номер телефона ");
                     String namberTel = csr.nextLine();
-                    //long namberSotov = Long.parseLong(namberTel);//созданна переменная для хренения номера
+
                     while (true){
                         if (namberTel.length() == 11) {
                             System.out.println(" В течении 15 секунд. На ваш номер поступит смс с кодом ");
@@ -39,8 +39,6 @@ public class Beginning {
                             Taimer.Taiming();
                             GlobalPeremennai.peremennai1.balance = with3digits;
                             break;
-
-
                         } else {
                             System.err.println("Неверная длина телефона. ");
                             System.out.println("Попробуйте еще раз!  ");
