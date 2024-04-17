@@ -13,7 +13,7 @@ public class Taimer {
 
             public void run() {
                 if (secondsPassed < 15) {
-                    System.out.println(secondsPassed + 1+"\r"); // Выводим числа от 1 до 15
+                    System.out.print(secondsPassed + 1 + "\r"); // Выводим числа от 1 до 15
                     secondsPassed++;
                 } else {
                     System.out.println("Таймер завершен");

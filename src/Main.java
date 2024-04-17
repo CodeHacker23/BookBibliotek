@@ -18,8 +18,10 @@ public class Main { //07.12.23
      */
 
     public static void main(String[] args) throws NegativeException {
-        Beginning beginning = new Beginning();
-        beginning.beginning1();
+        Beginning beginning = new Beginning(); //создали объект
+        beginning.beginning1(); //вызвали метод
+
+
 
     }
 
